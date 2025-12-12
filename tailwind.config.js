@@ -1,24 +1,25 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+
+  safelist: [
+    // Prevent Tailwind purge removing important classes
+    "h-16", "h-20", "h-24", "h-[105px]",
+    "text-[13px]", "text-[14px]", "text-[15px]",
+    "tracking-wide", "tracking-wider",
+    "px-6", "px-8",
+    "uppercase",
+    "font-semibold",
+    "font-bold"
+  ],
+
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "Inter",
-          "Helvetica Neue",
-          "Roboto",
-          "ui-sans-serif",
-          "system-ui",
-        ],
-        serif: [
-          "Playfair Display",
-          "Georgia",
-          "serif",
-        ],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Playfair Display", "Georgia", "serif"],
       },
 
       colors: {
@@ -28,14 +29,8 @@ export default {
       },
 
       letterSpacing: {
-        "wide-sm": "0.035em",   // For nav links (Haldiram style)
+        "wide-sm": "0.035em",
         "wide-md": "0.06em",
-      },
-
-      fontWeight: {
-        semibold: 600,
-        bold: 700,
-        extrabold: 800,
       },
 
       keyframes: {
@@ -50,5 +45,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 };
