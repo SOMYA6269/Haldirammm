@@ -5,14 +5,54 @@ export default {
   ],
 
   safelist: [
-    // Prevent Tailwind purge removing important classes
-    "h-16", "h-20", "h-24", "h-[105px]",
-    "text-[13px]", "text-[14px]", "text-[15px]",
-    "tracking-wide", "tracking-wider",
-    "px-6", "px-8",
+    // NAVBAR HEIGHTS
+    "h-[74px]",
+    "h-[82px]",
+    "h-[108px]",
+
+    // ICON SIZES
+    "w-6", "h-6",
+    "w-7", "h-7",
+    "w-[30px]", "h-[30px]",
+
+    // TEXT SIZES
+    "text-[10px]",
+    "text-[15px]",
+    "text-[17px]",
+    "text-[14px]",
+
+    // SPACING
+    "gap-5",
+    "gap-8",
+    "gap-10",
+    "px-10",
+    "px-5",
+    "py-2.5",
+    "pl-5",
+    "pr-12",
+
+    // TRACKING
+    "tracking-wide",
+    "tracking-wider",
+
+    // POSITION
+    "-translate-x-1/2",
+    "-translate-y-1/2",
+
+    // CUSTOM WIDTHS
+    "w-[300px]",
+    "max-w-[1700px]",
+
+    // ANNOUNCEMENT BAR
+    "h-14",
+
+    // FLEX + OTHERS USED IN NAVIGATION
     "uppercase",
     "font-semibold",
-    "font-bold"
+    "font-bold",
+    "border-b-2",
+    "border-transparent",
+    "hover:border-red-600",
   ],
 
   theme: {
@@ -28,11 +68,6 @@ export default {
         haldiGold: "#D6AF72",
       },
 
-      letterSpacing: {
-        "wide-sm": "0.035em",
-        "wide-md": "0.06em",
-      },
-
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
@@ -41,7 +76,7 @@ export default {
       },
 
       animation: {
-        marquee: "marquee 14s linear infinite",
+        marquee: "marquee 12s linear infinite",
       },
     },
   },
